@@ -6,7 +6,8 @@
 // <= (Menor ou igual)
 // == (Igualdade, sem verificar o tipo)
 // === (Igualdade estrita, verifica o tipo)
-
+// != (Diferente, sem verificar o tipo)
+// != (Diferente estrito,verifica o tipo)
 
 let numero = "255";
 if(numero == 21){
@@ -50,3 +51,11 @@ if(variavel1 == 2){
 }else {
     console.log("A variavel1 não tem esse valor");
 }
+
+// Condicional (Diferente)
+
+console.log(1 != '1'); // False (Valores são iguais)
+console.log(1 !== '1'); // True (Valores são diferentes)
+
+
+
