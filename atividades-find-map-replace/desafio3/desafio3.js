@@ -4,5 +4,5 @@ const usuarios = [
     { id: 2, nome: "B" },
   ];
 
-  const n = usuarios.find(n => n.id === 2);
+  const n = usuarios.find(n => n.id === 3);
 console.log(n);

@@ -113,6 +113,7 @@ const totalPorCategoria = itens.reduce((acc, it) => {
 console.log(totalPorCategoria)
 */
 
+/*
 const compras = [
     {nome: "Leite", preco:5},
     {nome: "Pão", preco:8},
@@ -124,3 +125,25 @@ const valorTotal = compras.reduce((acumulador, itemAtual) => {
 }, 0)
 
 console.log(valorTotal)
+*/
+
+//Lista de produtos
+const produtos = [
+    {id:1, nome: "Notebook", preco: 1000}
+    {id:2, nome: "Mouse", preco: 300}
+    {id:3, nome: "Teclado", preco: 500}
+    {id:4, nome: "Monitor", preco: 1200}
+];
+
+//Filtrar produtos com o preço acima de 500
+const produtosCaros = produtos.filter(produto => produto.preco > 500)
+
+//Encontrar o primeiro produto chamado "Mouse"
+const mouse = produtos.find(produto => produto.nome === "Mouse");
+//Criar um array apenas com os nomes dos produtos
+const nomesProdutos = produtos.map(produtos => produtos.nome);
+//Somar todos os preços dos produtos usando reduce
+const totalPreco = produtos.reduce((acumulador, produto) => {
+    return acumulador = produto.preco; 
+}, 0);
+//Retorno

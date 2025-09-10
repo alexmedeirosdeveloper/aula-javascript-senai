@@ -1,5 +1,6 @@
 const palavras = ["js", "html"]
 
-const palavrasMaiusculas = palavras.map(maiuscula);
-return maiuscula.toUpperCase();
+const palavrasMaiusculas = palavras.map(p => p.toUpperCase());
+
+console.log(palavrasMaiusculas)
 

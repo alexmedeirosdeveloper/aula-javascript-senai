@@ -3,5 +3,8 @@ const produtos = [
   { nome: "Y", preco: 30 },
   ];
 
-  const n = produtos.find(n => n.id <= 20);
-console.log(n);
+  //Primeiro filtramos apenas os produtos com preço >20
+  const produtosCaros = produtos.filter(p => p.preco > 20);
+  //Depois usamos map para pegar apenas os nomes
+  const nomesCaros = produtosCaros.map(p => p.nome)
+  console.log(nomesCaros)
